@@ -4,9 +4,9 @@
  * @copyright Copyright (c) gofas.net 2016
  * @see https://gofas.net
 */
-require __DIR__.'/gofaspaypalplus/configuration.php';
 // Invoca Laravel's functions
 use Illuminate\Database\Capsule\Manager as Capsule;
+include __DIR__.'/gofaspaypalplus/configuration.php';
 
 function gofaspaypalplus_link($params){
 	
