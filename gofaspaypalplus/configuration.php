@@ -5,7 +5,7 @@
  * @see https://gofas.net
 */
 // Configuações
-function gofaspaypalplus_config($params) {
+function gofaspaypalplus_config() {
 	return array(
 		// Nome de exibição amigável para o gateway
 		'FriendlyName' => array(
