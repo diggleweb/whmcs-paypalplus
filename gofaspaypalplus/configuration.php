@@ -105,7 +105,7 @@ function gofaspaypalplus_config($params) {
 		// Crédito
 		'credits' => array(
 			'Description' => '<div style="background: #dde9f9;padding: 5px 15px;">
-			&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | <a target="_blank" href="http://paypalpluswhmcs.gofas.net">Documentação</a> | <a target="_blank" href="http://paypalpluswhmcs.gofas.net/#suporte">Suporte</a><br/>
+			&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | <a target="_blank" href="http://whmcs-paypalplus.gofas.net">Documentação</a> | <a target="_blank" href="http://whmcs-paypalplus.gofas.net/#suporte">Suporte</a><br/>
 			</div>',
 		),
 	);
