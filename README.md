@@ -29,7 +29,7 @@ Esse módulo permite receber pagamentos via cartão de crédito diretamente nas 
  	<li>Acesse <a href="https://developer.paypal.com/" target="_blank">developer.paypal.com</a> &gt; Dashboard &gt; My Apps &amp; Credentials &gt; REST API apps e crie um aplicativo para ser utilizado apenas com o módulo de integração. Salve as credenciais <em>Client_ID</em> e <em>Client_Secret </em>ou mantenha essa página aberta;</li>
 </ol>
 <h2>Configurações do módulo</h2>
-<a href="http://whmcs.red/wp-content/uploads/2016/09/whmcs-paypalplus-config.png"><img class="alignnone size-full wp-image-151" src="http://whmcs.red/wp-content/uploads/2016/09/whmcs-paypalplus-config.png" alt="whmcs-paypalplus-config" width="1255" height="736" /></a>
+<a href="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus-config.png"><img src="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus-config.png" alt="whmcs-paypalplus-config" style="width: 100%; height: auto;"/></a>
 <ol>
  	<li><strong>Live Client ID</strong>: Insira o Client ID do modo "<strong>produção</strong>" de acesso à REST API do seu aplicativo;</li>
  	<li><strong>Live Client Secret</strong>: Insira o Client Secret do modo "<strong>produção</strong>" do seu aplicativo;</li>
@@ -47,4 +47,4 @@ Por segurança, NÃO use isso em produção, apenas para testes ou se precisar d
 </ol>
 Lembre-se de que o seu feedback é muito importante para dar continuidade aos projetos, se os <em>softwares</em> que compartilhamos são úteis para o seu negócio, contribua, é simples, basta <a href="http://whmcs-paypalplus.gofas.net">comentar</a>.
 
-<a href="http://whmcs-paypalplus.gofas.net">Suporte</a>
+<a href="http://whmcs-paypalplus.gofas.net">Dúvidas, Comentários e Suporte</a>
