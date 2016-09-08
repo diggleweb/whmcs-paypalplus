@@ -12,7 +12,6 @@ function gofaspaypalplus_link($params){
 	
 	// Parametros da configuração do Gateway
 	include __DIR__.'/gofaspaypalplus/params.php';
-	include __DIR__.'/gofaspaypalplus/functions.php';
 	
 	// Verifica instalação
 	// Verifica DB se existe a tabela do módulo
