@@ -1,7 +1,7 @@
 # Módulo WHMCS PayPal Plus
 ##Módulo de integração para WHMCS com PayPal Plus, o Checkout Transparente do PayPal.
 
-Orgulhosamente apresentamos o módulo<strong><a href="#" target="_blank"> Gofas PayPal Plus para WHMCS</a>,</strong> o primeiro módulo de checkout transparente gratuito para WHMCS!
+Orgulhosamente apresentamos o módulo<strong><a href="http://whmcs-paypalplus.gofas.net/#" target="_blank"> Gofas PayPal Plus para WHMCS</a>,</strong> o primeiro módulo de checkout transparente gratuito para WHMCS!
 
 Esse módulo permite receber pagamentos via cartão de crédito diretamente nas suas faturas do WHMCS, o seu cliente não precisa sair do seu site para finalizar o pagamento.</strong>
 
@@ -23,7 +23,7 @@ Esse módulo permite receber pagamentos via cartão de crédito diretamente nas 
 </ul>
 <h2>Instalação do módulo</h2>
 <ol>
- 	<li>Faça <a href="#">download aqui</a>;</li>
+ 	<li>Faça <a href="https://github.com/gofas/whmcs-paypalplus/zipball/master">download aqui</a>;</li>
  	<li>Descompacte, mova o arquivo <code>gofaspaypalplus.php</code> e a pasta<code> gofaspaypalplus</code> para a pasta <code>/whmcs/modules/gateways/</code> da instalação do WHMCS;</li>
  	<li>Ative o módulo;</li>
  	<li>Acesse <a href="https://developer.paypal.com/" target="_blank">developer.paypal.com</a> &gt; Dashboard &gt; My Apps &amp; Credentials &gt; REST API apps e crie um aplicativo para ser utilizado apenas com o módulo de integração. Salve as credenciais <em>Client_ID</em> e <em>Client_Secret </em>ou mantenha essa página aberta;</li>
