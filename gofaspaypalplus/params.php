@@ -33,7 +33,7 @@ $experience_profile = '{
 	}';
 	
 // Parametros da configuração do Gateway
-$moduleVersion		= '1.0';
+$moduleVersion		= '0.1.4'; // Releases: https://github.com/gofas/whmcs-paypalplus/releases
 $sandbox			= $params['sandboxmode'];
 if ($params['customfieldcpf']) {
 	$customfCPF			= $params['customfieldcpf'];
@@ -70,17 +70,9 @@ if ($isInvoive){
 	$debug				= false;
 }
 
-$emailonError 		= $params['emailonerror'];
+$buttonLocation = 'outside';
 
-if ($params['whmcspaybutton']){
-	$buttonLocation = 'outside';
-	//$buttonLocationParms = '"enableContinue":"continueButton","disableContinue":"continueButton",';
-} elseif (!$params['whmcspaybutton']){
-	$buttonLocation = 'inside';
-	//$buttonLocationParms = '';
-}
-
-if ($params['paybuttonimage'] and $params['whmcspaybutton']){
+if ($params['paybuttonimage']){
 	$payButtonCss		= '
 	.payment-btn-container button.continueButton {
     background: url('.$params['paybuttonimage'].') no-repeat center;
@@ -96,7 +88,7 @@ if ($params['paybuttonimage'] and $params['whmcspaybutton']){
 ';
 	$payButton			= '<button type="submit" class="continueButton" id="continueButton" onclick="ppp.doContinue(); return true;">  </button>';
 	
-}elseif(!$params['paybuttonimage'] and $params['whmcspaybutton']){
+}elseif(!$params['paybuttonimage']){
 	$payButtonCss		= '
 	.payment-btn-container button.continueButton {
     background: #009cde;
@@ -115,9 +107,6 @@ if ($params['paybuttonimage'] and $params['whmcspaybutton']){
 ';
 	$payButton			= '<button type="submit" class="continueButton" id="continueButton" onclick="ppp.doContinue(); return true;">Finalizar Pagamento</button>';
 	
-} elseif (!$params['whmcspaybutton']) {
-	$payButtonCss		= '';
-	$payButton			= '';
 }
 // CSS da fatura
 
@@ -155,13 +144,14 @@ if($params['admin']) {
 	$whmcsAdmin 		= 1;
 }
 // Parametros da Fatura
-$invoiceID			= $params['invoiceid'];
-$invoiceDescription = $params["description"];
-$invoiceAmount		= $params['amount'];
+$invoiceID				= $params['invoiceid'];
+$invoiceDescription 	= $params["description"];
+$invoiceAmount			= $params['amount'];
 
 // Parâmetros das transações
-$transIDp 			= end($getinvoiceResults['transactions']['transaction']); // Pula para o último resultado do array
-$transID 			= $transIDp['transid']; // Captura ID da Última transação
+$endGetinvoiceResults	= end($getinvoiceResults['transactions']['transaction']); // Pula para o último resultado do array
+$transIDp 				= $endGetinvoiceResults;
+$transID 				= $transIDp['transid']; // Captura ID da Última transação
 
 // Parametros do Cliente
 $userID 			= $params['clientdetails']['id'];
@@ -273,6 +263,4 @@ else {
 		$payerTaxIdType_2 = false;
 	}
 }
-
-
 ?>

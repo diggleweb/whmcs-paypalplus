@@ -387,7 +387,7 @@ function gofaspaypalplus_link($params){
 							document.getElementById("gpppjsdebug").innerHTML = "<br/>Iframe carregado com sucesso.<br/>"; // Debug
 							document.getElementById("continueButton").style.display = "block";
 							document.getElementById("continueButton").disabled = false;
-							document.getElementById("continueButton").style.cursor = "not-allowed";
+							document.getElementById("continueButton").style.cursor = "pointer";
 							
 						// enableContinueButton
 						} else if ( actionValue == "enableContinueButton") {
@@ -488,7 +488,7 @@ function gofaspaypalplus_link($params){
 							// document.getElementById("gpppjsdebug").innerHTML = "<br/>Iframe carregado com sucesso!<br/>"; // Debug
 							document.getElementById("continueButton").style.display = "block";
 							document.getElementById("continueButton").disabled = false;
-							document.getElementById("continueButton").style.cursor = "not-allowed";
+							document.getElementById("continueButton").style.cursor = "pointer";
 							
 						// enableContinueButton
 						} else if ( actionValue == "enableContinueButton") {
@@ -558,21 +558,6 @@ function gofaspaypalplus_link($params){
 		
 	} elseif ( $error and !$emailonError) {
 		return $error;
-		
-	} elseif ( $error and $emailonError ) {
-		return $error;
-		$EmailonError = "sendadminemail";
- 		$EOEvalues['customsubject'] = 'Erro ao gerar cobrança com PayPal Plus - fatura #'.$invoiceID;
-		$EOEvalues['custommessage'] = '<br/>Olá administrador,<br/>
-		Um de seus clientes presenciou uma falha ao gerar cobrança com PayPal Plus na <a href="'.$systemUrl.'/admin/invoices.php?action=edit&id='.$invoiceID.'">fatura #'.$invoiceID.'</a>, leia com atenção para encontrar a solução e caso necessário, orientar o cliente.<br/><br/>
-		Detalhes do erro:<br/>
-		<b>Cliente:</b> <a href="'.$systemUrl.'/admin/clientssummary.php?userid='.$userID.'">'.$firstname.' '.$lastname.'</a><br/><br/>
-		<b>Erro exibido ao cliente:</b><br/><i>"'
-		.$error.'"</i><br/><br/>
-		Email gerado de acordo com às configurações do gateway Gofas PayPal Plus.<br/><br/>';
- 		$EOEvalues['type'] = 'system';
- 		$EOEvalues['deptid'] = $emailonError;
- 		localAPI($EmailonError,$EOEvalues,$whmcsAdmin);
 		
 	}
 }

@@ -1,4 +1,4 @@
-﻿<?php 
+<?php 
 /** 
  * Módulo PayPal Plus por Mauricio Gofas (gofas.net)
  * @copyright Copyright (c) gofas.net 2016
@@ -56,14 +56,7 @@ function gofaspaypalplus_config() {
 			'Type' => 'yesno',
 			'Description' => 'Marque essa opção para exibir resultados e erros retornados pela API PayPal e API interna do WHMCS.<b><br/>Por segurança, NÃO use isso em produção, apenas para testes ou se precisar diagnosticar erros.',
 		),
-		// Notificar admin sobre erros
-		'emailonerror' => array(
-			'FriendlyName' => 'Enviar email em caso de erro',
-			'Type' => 'text',
-			'Size' => '10',
-			'Default' => '',
-			'Description' => 'Adicione o ID do departamento de suporte que será notificado em caso de erro nas transações. Deixe em branco para desativar.',
-		),
+		
 		// whmcs admin
 		'admin' => array(
 			'FriendlyName' => 'Administrador atribuído',
@@ -88,12 +81,7 @@ function gofaspaypalplus_config() {
 			'Default' => '1',
 			'Description' => 'Insira a ordem de exibição do <a style="text-decoration: underline;" href="/admin/configcustomfields.php" target="_blank">campo personalizado</a> criado para coletar o CNPJ do cliente. Deixe em branco se você usa apenas um campo para CPF e CNPJ.',
 		),
-		// Botão "Finalizar Pagamento" do PayPal ou WHMCS?
-		'whmcspaybutton' => array(
-			'FriendlyName' => 'Utilizar botão Finalizar Pagamento do Módulo',
-			'Type' => 'yesno',
-			'Description' => 'Marque essa opção para utilizar o botão de pagamento do módulo ao invés do botão do PayPal.',
-		),
+
 		// Botão "Finalizar Pagamento"
 		'paybuttonimage' => array(
 			'FriendlyName' => 'Imagem do botão "Finalizar Pagamento"',
@@ -105,7 +93,7 @@ function gofaspaypalplus_config() {
 		// Crédito
 		'credits' => array(
 			'Description' => '<div style="background: #dde9f9;padding: 5px 15px;">
-			&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | <a target="_blank" href="http://whmcs-paypalplus.gofas.net">Documentação</a> | <a target="_blank" href="http://whmcs-paypalplus.gofas.net/#suporte">Suporte</a><br/>
+			&copy; '.date('Y').' <a target="_blank" href="https://gofas.net">Gofas.net</a> | <a target="_blank" href="http://whmcs-paypalplus.gofas.net">Documentação</a><br/>
 			</div>',
 		),
 	);
