@@ -8,6 +8,9 @@
 use Illuminate\Database\Capsule\Manager as Capsule;
 include __DIR__.'/gofaspaypalplus/configuration.php';
 
+// Reporta todos os erros e avisos do php independende da configuração do servidor
+error_reporting(E_ERROR | E_WARNING | E_PARSE);
+
 function gofaspaypalplus_link($params){
 	
 	// Parametros da configuração do Gateway

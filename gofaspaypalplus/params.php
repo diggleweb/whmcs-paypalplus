@@ -33,7 +33,7 @@ $experience_profile = '{
 	}';
 	
 // Parametros da configuração do Gateway
-$moduleVersion		= '0.1.4'; // Releases: https://github.com/gofas/whmcs-paypalplus/releases
+$moduleVersion		= '0.1.5'; // Releases: https://github.com/gofas/whmcs-paypalplus/releases
 $sandbox			= $params['sandboxmode'];
 if ($params['customfieldcpf']) {
 	$customfCPF			= $params['customfieldcpf'];
@@ -147,11 +147,6 @@ if($params['admin']) {
 $invoiceID				= $params['invoiceid'];
 $invoiceDescription 	= $params["description"];
 $invoiceAmount			= $params['amount'];
-
-// Parâmetros das transações
-$endGetinvoiceResults	= end($getinvoiceResults['transactions']['transaction']); // Pula para o último resultado do array
-$transIDp 				= $endGetinvoiceResults;
-$transID 				= $transIDp['transid']; // Captura ID da Última transação
 
 // Parametros do Cliente
 $userID 			= $params['clientdetails']['id'];

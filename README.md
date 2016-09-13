@@ -38,11 +38,9 @@ Esse módulo permite receber pagamentos via cartão de crédito diretamente nas 
  	<li><strong>Sandbox</strong>: Marque essa opção se você estiver utilizando o par de chaves "Client_Id" e "Client_Secret" do modo Sandbox (Desenvolvimento);</li>
  	<li><strong>Debug</strong>: Marque essa opção para exibir resultados e erros retornados pela API PayPal e API interna do WHMCS.<b>
 Por segurança, NÃO use isso em produção, apenas para testes ou se precisar diagnosticar erros;</b></li>
- 	<li><strong>Enviar email em caso de erro</strong>: Adicione o ID do departamento de suporte que será notificado em caso de erro nas transações. Deixe em branco para desativar;</li>
  	<li><strong>Administrador atribuído</strong>: Insira o nome de usuário ou ID do administrador que será atribuído as transações. Necessário para usar a API interna do WHMCS;</li>
  	<li><strong>Ordem do campo CPF ou CNPJ: </strong>Insira a ordem de exibição do campo personalizado criado para coletar o CPF ou CNPJ do cliente;</li>
  	<li><strong>Ordem do campo CNPJ</strong>: Insira a ordem de exibição do campo personalizado criado para coletar o CNPJ do cliente. Deixe em branco se você usa apenas um campo para CPF e CNPJ;</li>
- 	<li><strong>Utilizar botão Finalizar Pagamento do Módulo: </strong>Marque essa opção para utilizar o botão de pagamento do módulo ao invés do botão do PayPal;</li>
  	<li><strong>Imagem do botão "Finalizar Pagamento":</strong> Insira o URL da imagem que será usada como botão "Finalizar Pagamento" (tamanho recomendado: entre 160x40px e 339x40px);</li>
 </ol>
 Lembre-se de que o seu feedback é muito importante para dar continuidade aos projetos, se os <em>softwares</em> que compartilhamos são úteis para o seu negócio, contribua, é simples, basta <a href="http://whmcs-paypalplus.gofas.net">comentar</a>.
