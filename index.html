@@ -1,148 +1,1 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Módulo PayPal Plus para WHMCS - O Checkout Transparente do PayPal no WHMCS by gofas</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-dark.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-	<meta property="fb:app_id" content="540954269312586" />
-    <link rel="icon" href="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-32x32.png" sizes="32x32" />
-	<link rel="icon" href="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-192x192.png" sizes="192x192" />
-	<link rel="apple-touch-icon-precomposed" href="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-180x180.png" />
-<meta name="msapplication-TileImage" content="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-270x270.png" />
-<script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/6a4b622b5f506b0c702d26222319144a.js" async="async"></script>
-
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/gofas/whmcs-paypalplus">Ver no GitHub</a></li>
-          <li class="downloads"><a href="https://github.com/gofas/whmcs-paypalplus/zipball/master">ZIP</a></li>
-          <li class="downloads"><a href="https://github.com/gofas/whmcs-paypalplus/tarball/master">TAR</a></li>
-          <li class="title">DOWNLOADS</li>
-        </nav>
-      </div><!-- end header -->
-
-    <div class="wrapper">
-
-      <section>
-        <div id="title">
-          <h1>Módulo PayPal Plus para WHMCS</h1>
-          <hr>
-          <span class="credits left">Projeto mantido por <a href="https://gofas.net">gofas.net</a></span>
-        </div>
-
-        <h1>
-
-<h2>
-<a id="módulo-de-integração-para-whmcs-com-paypal-plus-o-checkout-transparente-do-paypal" class="anchor" href="#m%C3%B3dulo-de-integra%C3%A7%C3%A3o-para-whmcs-com-paypal-plus-o-checkout-transparente-do-paypal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Módulo de integração para WHMCS com PayPal Plus, o Checkout Transparente do PayPal.</h2>
-
-<p>Orgulhosamente apresentamos o módulo<strong><b> Gofas PayPal Plus para WHMCS</b>,</strong> o primeiro módulo de checkout transparente gratuito para WHMCS!</p>
-
-<p>Esse módulo permite receber pagamentos via cartão de crédito diretamente nas suas faturas do WHMCS, o seu cliente não precisa sair do seu site para finalizar o pagamento.</p>
-
-<h2>
-<a id="demonstração-da-finalização-do-pagamento-na-fatura" class="anchor" href="#demonstra%C3%A7%C3%A3o-da-finaliza%C3%A7%C3%A3o-do-pagamento-na-fatura" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demonstração da finalização do pagamento na fatura</h2>
-
-<p><img src="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus.gif" alt="paypalplus"></p>
-
-<p><strong>Para utilizar PayPal Plus você precisa:</strong></p>
-
-<ul>
-    <li>Conta PayPal Empresarial;</li>
-    <li>CNPJ;</li>
-    <li>SSL;</li>
-    <li>Solicitar avaliação <a href="https://www.paypal.com/br/webapps/mpp/paypal-payments-pro">aqui</a>
-</li>
-</ul>
-
-<h2>
-<a id="requisitos-do-sistema" class="anchor" href="#requisitos-do-sistema" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Requisitos do sistema</strong>
-</h2>
-
-<ul>
-    <li>PHP &gt;= 5.4.0</li>
-    <li>WHMCS &gt;= 6.0.4</li>
-</ul>
-
-<h2>
-<a id="instalaçãodo-módulo" class="anchor" href="#instala%C3%A7%C3%A3odo-m%C3%B3dulo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalação do módulo</h2>
-
-<ol>
-    <li>Faça <a href="https://github.com/gofas/whmcs-paypalplus/zipball/master">download aqui</a>;</li>
-    <li>Descompacte, mova o arquivo <code>gofaspaypalplus.php</code> e a pasta<code> gofaspaypalplus</code> para a pasta <code>/whmcs/modules/gateways/</code> da instalação do WHMCS;</li>
-    <li>Ative o módulo;</li>
-    <li>Acesse <a href="https://developer.paypal.com/">developer.paypal.com</a> &gt; Dashboard &gt; My Apps &amp; Credentials &gt; REST API apps e crie um aplicativo para ser utilizado apenas com o módulo de integração. Salve as credenciais <em>Client_ID</em> e <em>Client_Secret </em>ou mantenha essa página aberta;</li>
-</ol>
-
-<h2>
-<a id="configurações-do-módulo" class="anchor" href="#configura%C3%A7%C3%B5es-do-m%C3%B3dulo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configurações do módulo</h2>
-
-<p><a href="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus-config.png"><img src="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus-config.png" alt="whmcs-paypalplus-config"></a></p>
-
-<ol>
-    <li>
-<strong>Live Client ID</strong>: Insira o Client ID do modo "<strong>produção</strong>" de acesso à REST API do seu aplicativo;</li>
-    <li>
-<strong>Live Client Secret</strong>: Insira o Client Secret do modo "<strong>produção</strong>" do seu aplicativo;</li>
-    <li>
-<strong>Sandbox Client ID</strong>: Insira o Client ID do modo "<strong>desenvolvimento</strong>" do seu aplicativo;</li>
-    <li>
-<strong>Sandbox Client Secret: </strong>Insira o Client Secret do modo "desenvolvimento" do seu aplicativo;</li>
-    <li>
-<strong>Sandbox</strong>: Marque essa opção se você estiver utilizando o par de chaves "Client_Id" e "Client_Secret" do modo Sandbox (Desenvolvimento);</li>
-    <li>
-<strong>Debug</strong>: Marque essa opção para exibir resultados e erros retornados pela API PayPal e API interna do WHMCS.<b>
-Por segurança, NÃO use isso em produção, apenas para testes ou se precisar diagnosticar erros;</b>
-</li>
-   
-    <li>
-<strong>Administrador atribuído</strong>: Insira o nome de usuário ou ID do administrador que será atribuído as transações. Necessário para usar a API interna do WHMCS;</li>
-    <li>
-<strong>Ordem do campo CPF ou CNPJ: </strong>Insira a ordem de exibição do campo personalizado criado para coletar o CPF ou CNPJ do cliente;</li>
-    <li>
-<strong>Ordem do campo CNPJ</strong>: Insira a ordem de exibição do campo personalizado criado para coletar o CNPJ do cliente. Deixe em branco se você usa apenas um campo para CPF e CNPJ;</li>
-   
-    <li>
-<strong>Imagem do botão "Finalizar Pagamento":</strong> Insira o URL da imagem que será usada como botão "Finalizar Pagamento" (tamanho recomendado: entre 160x40px e 339x40px);</li>
-</ol>
-
-<p>Lembre-se de que o seu feedback é muito importante para dar continuidade aos projetos, se os <em>softwares</em> que compartilhamos são úteis para o seu negócio, contribua, é simples, basta <a href="#u_0_0">comentar</a>.</p>
-
-<div id="fb-root"></div>
-<script>(function(d, s, id) {
-  var js, fjs = d.getElementsByTagName(s)[0];
-  if (d.getElementById(id)) return;
-  js = d.createElement(s); js.id = id;
-  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7&appId=525888637497753";
-  fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
-
-<div class="fb-comments" data-href="http://whmcs-paypalplus.gofas.net/" data-width="645" data-numposts="20" data-colorscheme="dark" ></div>
-
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-83855479-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
-  </body>
-</html>
+<!doctype html><html>  <head>  <meta http-equiv="refresh" content="1;URL=https://gofas.net/whmcs/modulo-paypal-plus-para-whmcs/">     <meta charset="utf-8">    <meta http-equiv="X-UA-Compatible" content="chrome=1">    <title>Módulo PayPal Plus para WHMCS - O Checkout Transparente do PayPal no WHMCS by gofas</title>    <link rel="stylesheet" href="stylesheets/styles.css">    <link rel="stylesheet" href="stylesheets/github-dark.css">    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>    <script src="javascripts/respond.js"></script>    <!--[if lt IE 9]>      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>    <![endif]-->    <!--[if lt IE 8]>    <link rel="stylesheet" href="stylesheets/ie.css">    <![endif]-->    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">	<meta property="fb:app_id" content="540954269312586" />    <link rel="icon" href="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-32x32.png" sizes="32x32" />	<link rel="icon" href="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-192x192.png" sizes="192x192" />	<link rel="apple-touch-icon-precomposed" href="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-180x180.png" /><meta name="msapplication-TileImage" content="https://gofas.net/wp-content/uploads/2015/11/cropped-favicon1-270x270.png" /><script data-cfasync="false" type="text/javascript" src="//filamentapp.s3.amazonaws.com/6a4b622b5f506b0c702d26222319144a.js" async></script>  </head>  <body>      <div id="header">        <nav>          <li class="fork"><a href="https://github.com/gofas/whmcs-paypalplus">Ver no GitHub</a></li>          <li class="downloads"><a href="https://github.com/gofas/whmcs-paypalplus/zipball/master">ZIP</a></li>          <li class="downloads"><a href="https://github.com/gofas/whmcs-paypalplus/tarball/master">TAR</a></li>          <li class="title">DOWNLOADS</li>        </nav>      </div><!-- end header -->    <div class="wrapper">      <section>        <div id="title">          <h1>Módulo PayPal Plus para WHMCS</h1>          <hr>          <span class="credits left">Projeto mantido por <a href="https://gofas.net">gofas.net</a></span>        </div>        <h1><h2><a id="módulo-de-integração-para-whmcs-com-paypal-plus-o-checkout-transparente-do-paypal" class="anchor" href="#m%C3%B3dulo-de-integra%C3%A7%C3%A3o-para-whmcs-com-paypal-plus-o-checkout-transparente-do-paypal" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Módulo de integração para WHMCS com PayPal Plus, o Checkout Transparente do PayPal.</h2><p>Orgulhosamente apresentamos o módulo<strong><b> Gofas PayPal Plus para WHMCS</b>,</strong> o primeiro módulo de checkout transparente gratuito para WHMCS!</p><p>Esse módulo permite receber pagamentos via cartão de crédito diretamente nas suas faturas do WHMCS, o seu cliente não precisa sair do seu site para finalizar o pagamento.</p><h2><a id="demonstração-da-finalização-do-pagamento-na-fatura" class="anchor" href="#demonstra%C3%A7%C3%A3o-da-finaliza%C3%A7%C3%A3o-do-pagamento-na-fatura" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Demonstração da finalização do pagamento na fatura</h2><p><img src="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus.gif" alt="paypalplus"></p><p><strong>Para utilizar PayPal Plus você precisa:</strong></p><ul>    <li>Conta PayPal Empresarial;</li>    <li>CNPJ;</li>    <li>SSL;</li>    <li>Solicitar avaliação <a href="https://www.paypal.com/br/webapps/mpp/paypal-payments-pro">aqui</a></li></ul><h2><a id="requisitos-do-sistema" class="anchor" href="#requisitos-do-sistema" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a><strong>Requisitos do sistema</strong></h2><ul>    <li>PHP &gt;= 5.4.0</li>    <li>WHMCS &gt;= 6.0.4</li></ul><h2><a id="instalaçãodo-módulo" class="anchor" href="#instala%C3%A7%C3%A3odo-m%C3%B3dulo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Instalação do módulo</h2><ol>    <li>Faça <a href="https://github.com/gofas/whmcs-paypalplus/zipball/master">download aqui</a>;</li>    <li>Descompacte, mova o arquivo <code>gofaspaypalplus.php</code> e a pasta<code> gofaspaypalplus</code> para a pasta <code>/whmcs/modules/gateways/</code> da instalação do WHMCS;</li>    <li>Ative o módulo;</li>    <li>Acesse <a href="https://developer.paypal.com/">developer.paypal.com</a> &gt; Dashboard &gt; My Apps &amp; Credentials &gt; REST API apps e crie um aplicativo para ser utilizado apenas com o módulo de integração. Salve as credenciais <em>Client_ID</em> e <em>Client_Secret </em>ou mantenha essa página aberta;</li></ol><h2><a id="configurações-do-módulo" class="anchor" href="#configura%C3%A7%C3%B5es-do-m%C3%B3dulo" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Configurações do módulo</h2><p><a href="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus-config.png"><img src="https://raw.githubusercontent.com/gofas/whmcs-paypalplus/master/whmcs-paypalplus-config.png" alt="whmcs-paypalplus-config"></a></p><ol>    <li><strong>Live Client ID</strong>: Insira o Client ID do modo "<strong>produção</strong>" de acesso à REST API do seu aplicativo;</li>    <li><strong>Live Client Secret</strong>: Insira o Client Secret do modo "<strong>produção</strong>" do seu aplicativo;</li>    <li><strong>Sandbox Client ID</strong>: Insira o Client ID do modo "<strong>desenvolvimento</strong>" do seu aplicativo;</li>    <li><strong>Sandbox Client Secret: </strong>Insira o Client Secret do modo "desenvolvimento" do seu aplicativo;</li>    <li><strong>Sandbox</strong>: Marque essa opção se você estiver utilizando o par de chaves "Client_Id" e "Client_Secret" do modo Sandbox (Desenvolvimento);</li>    <li><strong>Debug</strong>: Marque essa opção para exibir resultados e erros retornados pela API PayPal e API interna do WHMCS.<b>Por segurança, NÃO use isso em produção, apenas para testes ou se precisar diagnosticar erros;</b></li>       <li><strong>Administrador atribuído</strong>: Insira o nome de usuário ou ID do administrador que será atribuído as transações. Necessário para usar a API interna do WHMCS;</li>    <li><strong>Ordem do campo CPF ou CNPJ: </strong>Insira a ordem de exibição do campo personalizado criado para coletar o CPF ou CNPJ do cliente;</li>    <li><strong>Ordem do campo CNPJ</strong>: Insira a ordem de exibição do campo personalizado criado para coletar o CNPJ do cliente. Deixe em branco se você usa apenas um campo para CPF e CNPJ;</li>       <li><strong>Imagem do botão "Finalizar Pagamento":</strong> Insira o URL da imagem que será usada como botão "Finalizar Pagamento" (tamanho recomendado: entre 160x40px e 339x40px);</li></ol><p>Lembre-se de que o seu feedback é muito importante para dar continuidade aos projetos, se os <em>softwares</em> que compartilhamos são úteis para o seu negócio, contribua, é simples, basta <a href="#u_0_0">comentar</a>.</p><div id="fb-root"></div><script>(function(d, s, id) {  var js, fjs = d.getElementsByTagName(s)[0];  if (d.getElementById(id)) return;  js = d.createElement(s); js.id = id;  js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.7&appId=525888637497753";  fjs.parentNode.insertBefore(js, fjs);}(document, 'script', 'facebook-jssdk'));</script><div class="fb-comments" data-href="http://whmcs-paypalplus.gofas.net/" data-width="645" data-numposts="20" data-colorscheme="dark" ></div>      </section>    </div>    <!--[if !IE]><script>fixScale(document);</script><![endif]-->    <script>  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');  ga('create', 'UA-83855479-1', 'auto');  ga('send', 'pageview');</script>  </body></html>
