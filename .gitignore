@@ -1,3 +1,4 @@
+*.xlsx
 *.xml
 _notes/
 .DS_Store
