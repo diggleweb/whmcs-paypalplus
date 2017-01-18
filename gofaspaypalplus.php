@@ -41,7 +41,7 @@ function gofaspaypalplus_link($params){
 	* Obtem o access_token
 	*
 	**/
-	if ($isInvoive) {
+	if ( stripos($_SERVER['REQUEST_URI'], 'viewinvoice.php') ) { // if is invoice
 		$GATcurl = curl_init($pp_host.'/v1/oauth2/token'); 
 		curl_setopt($GATcurl, CURLOPT_POST, true); 
 		curl_setopt($GATcurl, CURLOPT_SSL_VERIFYPEER, false);
